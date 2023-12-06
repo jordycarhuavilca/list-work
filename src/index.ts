@@ -85,7 +85,6 @@ function toggleWarningContainer(){
 
 function getNextTaskId() : number{
     const tasks =getListTasks()
-    console.log(JSON.stringify(tasks))
     if (tasks.length > 0) {
         return tasks.sort((a,b)=>b.taskId-a.taskId)[0].taskId + 1
     }
