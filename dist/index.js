@@ -122,6 +122,8 @@ btn_addTask.addEventListener('click', () => {
         saveTask(task);
         renderizarListTask();
         toggleWarningContainer();
+        inputTask.value = '';
+        inputTask.focus();
     }
 });
 inputTask.addEventListener('keyup', (e) => {
@@ -135,6 +137,8 @@ inputTask.addEventListener('keyup', (e) => {
         saveTask(task);
         renderizarListTask();
         toggleWarningContainer();
+        inputTask.value = '';
+        inputTask.focus();
     }
 });
 btn_setName.addEventListener('click', () => {
