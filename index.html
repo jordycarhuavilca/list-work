@@ -9,51 +9,52 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/estilos.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="./js/main.js" defer></script>
+ 
   </head>
   <body>
     <div class="container">
       <header class="d-flex justify-content-end">
-        <button type="button" class="button_ligth_dark">
-          <i class="ligth_dark bi bi-toggle-off"></i>
-          <i class="disactive dark_ligth bi-toggle-on"></i>
+        <button type="button" class="buttonToggle">
+            <i class="toggleIcon bi-toggle-off"></i>
         </button>
       </header>
       <div class="time_container d-flex flex-column align-items-center gap-1">
         <span class="display-7" id="time"> lunes 1 de enero </span>
-        <p id="gretting">Make click here!</p>
-        <span class="disappear" id="motivationPhrase">Vamos a cumplir tus metas</span>
+        <p class="btn-setName">Make click here!</p>
+        <span class="disactive" id="motivationPhrase">Vamos a cumplir tus metas</span>
       </div>
       <div class="container-list_work">
         <div class="list_work d-flex gap-3 justify-content-center align-items-center flex-column">
           <div class="input_container">
-            <form action="" method="dialog" class="d-flex nowra gap-2 align-items-center">
-              <input type="text" placeholder="Agrega una tarea" />
-              <button type="submit" id="btn_add" class="btn btn-success btn-sm">
+            <div action="" method="dialog" class="d-flex nowra gap-2 align-items-center">
+              <input class="taskDescrip" type="text" placeholder="Agrega una tarea" />
+              <button type="submit" id="btn_addTask" class="btn btn-success btn-sm">
                 <i class="bi bi-plus-circle-fill"></i>
               </button>
-            </form>
+            </div>
           </div>
-          <div class="container-list_work_pendientes disactive">
-            <span>Estas son tus tarea pendientes</span>
+          <div  class="container-list_work_pendientes disactive">
+            <span >Estas son tus tarea pendientes</span>
           </div>
         </div>
         <!-- ADD LIST-WORK -->
         <div>
-          <ul id="ul"></ul>
+          <ul id="ul">
+            
+          </ul>
+          <div class="d-flex justify-content-center">
+            <span class="warning disactive">
+              no tienes tareas pendientes !
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </body>
-</html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </html>
+  
+  <script src="./dist/index.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

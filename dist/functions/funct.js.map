@@ -1,0 +1,1 @@
+{"version":3,"file":"funct.js","sourceRoot":"","sources":["../../src/functions/funct.ts"],"names":[],"mappings":";;;AAAA,SAAgB,WAAW;IACvB,IAAI,IAAI,GAAU,MAAM,CAAC,qDAAqD,CAAC,CAAA;IAC/E,IAAG,IAAI,EAAC,CAAC;QACL,MAAM,gBAAgB,GAAgB,QAAQ,CAAC,aAAa,CAAC,mBAAmB,CAAC,CAAA;QACjF,gBAAgB,CAAC,SAAS,CAAC,MAAM,CAAC,QAAQ,CAAC,CAAA;IAC/C,CAAC;AACL,CAAC;AAND,kCAMC"}

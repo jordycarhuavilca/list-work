@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 }
-.button_ligth_dark {
+.buttonToggle {
   border: 0;
   background: transparent;
 }
@@ -32,7 +32,7 @@ ul {
 .list_work {
   margin-bottom: 10px;
 }
-#gretting {
+.btn-setName {
   display: inline-block;
   cursor: pointer;
 }
@@ -53,13 +53,12 @@ input {
 li {
   position: relative;
   margin: auto;
-
   padding: 0.3em;
   border: 1px solid #000;
   width: 22.3em;
   border-radius: 0.3em;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   transition: linear 1s;
   gap: 0.4em;
@@ -80,12 +79,16 @@ p {
 .multicolor-text {
   color: #c7f2a4;
 }
-.disappear {
-  display: none;
-}
 .appear {
   display: block;
 }
 .opacity {
   opacity: 0.6;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+#motivationPhrase{
+  cursor: pointer;
 }
