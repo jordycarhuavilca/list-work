@@ -153,7 +153,7 @@ inputTask.addEventListener('keyup',(e)=>{
     }
 })
 btn_setName.addEventListener('click', () => {
-    swal("Write something here:", {
+    swal("Write your name:", {
       content: "input",
     }).then((value : string) => {
       if (value) {
