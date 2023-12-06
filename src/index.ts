@@ -136,7 +136,7 @@ btn_addTask.addEventListener('click',()=>{
         saveTask(task)
         renderizarListTask()
         toggleWarningContainer()
-        inputTask.value = ''
+        inputTask.value = ' '
         inputTask.focus()
 
     }
@@ -152,7 +152,7 @@ inputTask.addEventListener('keyup',(e)=>{
         saveTask(task)
         renderizarListTask()
         toggleWarningContainer()
-        inputTask.value = ''
+        inputTask.value = ' '
         inputTask.focus()
     }
 })
